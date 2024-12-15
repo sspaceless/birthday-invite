@@ -2,20 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: var(--font-unbounded);
+  background-image: url("/img/paper.png"); /* Path to your image in the public folder */
+  background-repeat: repeat; /* Ensures the image repeats */
+  background-size: auto; /* Default size, can adjust as needed */
+  background-position: top left; /* Start repeating from top-left */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes gradientSpread {
+  0% {
+    top: -200%;
+    left: 200%;
+    background-size: 400% 400%;
+    border-radius: 100%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    border-radius: 0%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
 }
