@@ -1,5 +1,6 @@
 import { Unbounded } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -13,7 +14,10 @@ export default function InviteLayout({
 }>) {
   return (
     <html lang="ua">
-      <body className={`${unbounded.className}`}>{children}</body>
+      <body className={`${unbounded.className}`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
