@@ -1,5 +1,6 @@
 export const PARTY_INFO = {
-  date: "04.01.2025 17:00",
-  wishlistLink: "https://mywishlist.online/w/nkeyfy/katerina",
-  location: "м. Одеса, ж/м 7 небо, вул. Європейська 10",
+  date: process.env.DATE,
+  wishlistLink: process.env.WISHLIST_LINK,
+  location: process.env.LOCATION,
+  locationGMapLink: process.env.LOCATION_GMAP_LINK,
 };

@@ -47,10 +47,7 @@ export const PartyInfo: React.FC = () => {
           height={0}
           className="hover:-rotate-6"
         />
-        <a
-          className="underline"
-          href="https://maps.app.goo.gl/ghdvNKwgpd1L73Hr6"
-        >
+        <a className="underline" href={PARTY_INFO.locationGMapLink}>
           {PARTY_INFO.location}
         </a>
       </div>
