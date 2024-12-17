@@ -20,7 +20,7 @@ export const PartyInfo: React.FC = () => {
           alt="sticks"
           width={80}
           height={0}
-          className="absolute right-[-15%] top-[-35%] hover:right-[-18%] hover:top-[-40%] transition-all ease-in-out duration-200"
+          className="absolute right-[-10%] top-[-45%] hover:right-[-13%] hover:top-[-50%] transition-all ease-in-out duration-200"
         />
 
         <Image

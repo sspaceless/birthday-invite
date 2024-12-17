@@ -40,7 +40,7 @@ export const Wrapper: React.FC<React.PropsWithChildren> = ({ children }) => {
           <Confetti
             width={width}
             height={height}
-            numberOfPieces={3000}
+            numberOfPieces={1500}
             tweenDuration={50000}
             recycle={false}
           />
