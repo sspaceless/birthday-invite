@@ -15,6 +15,22 @@ export default function InviteLayout({
 }>) {
   return (
     <html lang="ua">
+      <head>
+        <meta property="og:title" content="Запрошення на мій день народження" />
+        <meta
+          property="og:description"
+          content="Привіт, у мене скоро день народження, переглянь своє запрошення за посиланням"
+        />
+        <meta
+          property="og:image"
+          content="https://my-birthday-invite.vercel.app/img/preview.png"
+        />
+        <meta
+          property="og:url"
+          content="https://my-birthday-invite.vercel.app"
+        />
+        <meta property="og:type" content="website" />
+      </head>
       <body className={`${unbounded.className}`}>
         {children}
         <Analytics />

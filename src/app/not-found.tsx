@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export default function NotFound() {
   return (
     <div className="h-screen w-screen flex justify-center items-center overflow-hidden px-[5%] transition-all duration-200 ease-in-out">
@@ -9,7 +10,7 @@ export default function NotFound() {
           width={60}
           height={60}
           className="absolute left-[5%] bottom-[-40%] transition-all duration-200 ease-in-out animate-float"
-          style={{ animationDelay: "100ms" }}
+          style={{ animationDelay: "150ms" }}
         />
 
         <Image
@@ -22,7 +23,7 @@ export default function NotFound() {
         />
 
         <Image
-          src="/img/2.png"
+          src="/img/4.png"
           alt="2"
           width={150}
           height={0}
@@ -38,7 +39,7 @@ export default function NotFound() {
         />
 
         <Image
-          src="/img/2.png"
+          src="/img/4.png"
           alt="2"
           width={150}
           height={0}
